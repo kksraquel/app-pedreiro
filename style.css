@@ -1,0 +1,85 @@
+** {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 16px;
+    max-width: 480px;
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #b34700;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #b34700;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #e86a00;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Caixa de resultado (cerâmica, contrapiso e parede) */
+#resultado,
+#resultado-contrapiso,
+#resultado-parede {
+    margin-top: 20px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Esconde a caixa enquanto não tem resultado */
+#resultado:empty,
+#resultado-contrapiso:empty,
+#resultado-parede:empty {
+    display: none;
+}
+
+/* Telas: só a que tem a classe "ativa" aparece */
+.tela {
+    display: none;
+}
+
+.tela.ativa {
+    display: block;
+}
+
+/* Botão Voltar */
+.voltar {
+    width: auto;
+    margin-top: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #333;
+    background: transparent;
+}
